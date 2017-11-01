@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171101165353) do
+ActiveRecord::Schema.define(version: 20171101175301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,7 +43,15 @@ ActiveRecord::Schema.define(version: 20171101165353) do
     t.string "name"
   end
 
+  create_table "prices", force: :cascade do |t|
+    t.boolean "was_rented"
+    t.decimal "price"
+    t.date    "day"
+    t.integer "apartment_id"
+  end
+
   add_foreign_key "apartments", "cities"
   add_foreign_key "apartments_facilities", "apartments"
   add_foreign_key "apartments_facilities", "facilities"
+  add_foreign_key "prices", "apartments"
 end
