@@ -1,4 +1,4 @@
-class CreateApartments < ActiveRecord::Migration
+class CreateApartments < ActiveRecord::Migration[4.2]
   def change
     create_table :apartments do |t|
       t.references :city, foreign_key: true
