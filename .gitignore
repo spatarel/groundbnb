@@ -18,3 +18,11 @@
 /log/*
 !/log/.keep
 /tmp
+
+# We use per-environment credentials only; ignore the global mechanism.
+/config/credentials.yml.enc
+/config/master.key
+/config/secrets.yml
+
+# Ignore the per-environment decryption keys (the .yml.enc files stay in git).
+/config/credentials/*.key
