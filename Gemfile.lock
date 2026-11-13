@@ -226,6 +226,8 @@ GEM
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
     sqlite3 (2.9.6-x86_64-linux-gnu)
+    terser (1.2.8)
+      execjs (>= 0.3.0, < 3)
     thor (1.5.0)
     tilt (2.9.0)
     timeout (0.6.1)
@@ -235,8 +237,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.1)
-      execjs (>= 0.3.0, < 3)
     uri (1.1.1)
     useragent (0.16.11)
     web-console (4.3.0)
@@ -264,8 +264,8 @@ DEPENDENCIES
   sdoc (~> 2.6.5)
   spring
   sqlite3
+  terser (~> 1.2.8)
   turbolinks
-  uglifier (~> 4.2.1)
   web-console (~> 4.3.0)
 
 BUNDLED WITH

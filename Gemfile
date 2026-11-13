@@ -8,8 +8,8 @@ gem 'sqlite3'
 gem 'pg', '~> 1.6.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '~> 4.2.1'
+# Compresses JS code (requires a v8 engine like mini_racer).
+gem 'terser', '~> 1.2.8'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 5.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
